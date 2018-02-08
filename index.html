@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instacollage</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body class="grey darken-4">
+  <section id="collage">
+    <div class="row">
+      <div class="col s12 no-pad">
+        <div class="row">
+          <div class="col s6 no-pad">
+            <div class="frame3x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+            <div class="frame3x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+            <div class="frame3x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+          </div>
+          <div class="col s6 no-pad">
+            <div class="frame1x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)">
+            </div>
+            <div class="frame1x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <nav>
+      <div class="nav-wrapper deep-orange darken-4">
+        <a href="#" class="brand-logo center"><i class="material-icons">camera</i>PHOTO BOOTH</a>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="thumb col s4 no-pad"><img id="thumb1" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/1.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb2" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/2.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb3" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/3.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb4" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/4.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb5" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/5.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb6" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/6.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb7" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/7.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb8" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/8.jpg" alt=""></div>
+      <div class="thumb col s4 no-pad"><img id="thumb9" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/9.jpg" alt=""></div>
+      </div>
+  </section>
+  <div id="menu" class="navbar-fixed">
+    <nav class="deep-orange darken-4">
+      <div class="nav-wrapper">
+        <ul id="icons">
+          <li><a href="#"><i class="material-icons">camera_roll</i></a></li>
+          <li><a href="#"><i class="material-icons">face</i></a></li>
+          <li><a href="#"><i class="material-icons">photo_library</i></a></li>
+          <li><a href="#"><i class="material-icons">share</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
