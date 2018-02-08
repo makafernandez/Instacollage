@@ -2,37 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Instacollage</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body class="grey darken-4">
-  <section id="collage">
+  <section id="collage" class="grey darken-3">
     <div class="row">
-      <div class="col s12 no-pad">
-        <div class="row">
-          <div class="col s6 no-pad">
-            <div class="frame3x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
-            <div class="frame3x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
-            <div class="frame3x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
-          </div>
-          <div class="col s6 no-pad">
-            <div class="frame1x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)">
-            </div>
-            <div class="frame1x1 grey darken-3" ondragover="permitirDrop(event)" ondrop="drop(event)">
-            </div>
-          </div>
+      <div class="col s6 no-pad">
+        <div class="frame3x1" ondragover="permitirDrop(event)" ondrop="drop(event)">
+        </div>
+        <div class="frame3x1" ondragover="permitirDrop(event)" ondrop="drop(event)">
+        </div>
+        <div class="frame3x1" ondragover="permitirDrop(event)" ondrop="drop(event)">
+        </div>
+      </div>
+      <div class="col s6 no-pad">
+        <div class="frame1x1" ondragover="permitirDrop(event)" ondrop="drop(event)">
+        </div>
+        <div class="frame1x1" ondragover="permitirDrop(event)" ondrop="drop(event)">
         </div>
       </div>
     </div>
   </section>
+  <nav>
+    <div class="nav-wrapper deep-orange darken-4">
+      <a href="#" class="brand-logo center"><i class="material-icons">camera</i>PHOTO BOOTH</a>
+    </div>
+  </nav>
   <section id="gallery">
-    <nav>
-      <div class="nav-wrapper deep-orange darken-4">
-        <a href="#" class="brand-logo center"><i class="material-icons">camera</i>PHOTO BOOTH</a>
-      </div>
-    </nav>
     <div class="row">
       <div class="thumb col s4 no-pad"><img id="thumb1" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/1.jpg" alt=""></div>
       <div class="thumb col s4 no-pad"><img id="thumb2" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/2.jpg" alt=""></div>
@@ -45,24 +47,29 @@
       <div class="thumb col s4 no-pad"><img id="thumb9" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/9.jpg" alt=""></div>
       </div>
   </section>
-  <div id="menu" class="navbar-fixed">
-    <nav class="deep-orange darken-4">
-      <div class="nav-wrapper">
+  <footer>
+    <div class="row">
+      <div class="col s12 no-pad">
+        <nav>
+      <div class="nav-wrapper deep-orange darken-4">
         <ul id="icons">
-          <li><a href="#"><i class="material-icons">camera_roll</i></a></li>
-          <li><a href="#"><i class="material-icons">face</i></a></li>
-          <li><a href="#"><i class="material-icons">photo_library</i></a></li>
-          <li><a href="#"><i class="material-icons">share</i></a></li>
+          <li><a href="#"><i class="small material-icons">camera_roll</i></a></li>            
+          <li><a href="#"><i class="small material-icons">face</i></a></li>
+          <li><a href="#"><i class="small material-icons">photo_library</i></a></li>
+          <li><a href="#"><i class="small material-icons">share</i></a></li>
         </ul>
       </div>
     </nav>
-  </div>
+      </div>
+    </div>
+    
+  </footer>
   <!-- Scripts -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
