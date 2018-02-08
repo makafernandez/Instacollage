@@ -1,16 +1,22 @@
-//ACA DECLARAREMOS NUESTRAS FUNCIONES PARA HACER POSIBLE LA TRANSFERNCIA DE DATOS
+// Drag and Drop
 function drag(ev) {
   console.log(ev.target.src);
-  ev.dataTransfer.setData('text', ev.target.id);//ACA INDICAMOS EL TIPO DE DATO (FORMATO) QUE VAMOS A TRANFERIR
+  // Tipo de dato a transferir
+  ev.dataTransfer.setData('text', ev.target.id);
   ev.dataTransfer.effectAllowed = "copy";
+}
+
+function dragstart_handler(ev) {
+  // Set the drag effect to copy
+  ev.dataTransfer.dropEffect = "copy";
 }
 
 function permitirDrop(ev){
   ev.preventDefault();
-  ev.dataTransfer.dropEffect = "copy";
 }
 function drop(ev) {
   ev.preventDefault();
-  var id_thumb = ev.dataTransfer.getData('text');//ACA RECUPERAMOS LOS DATOS 
+  // Recupera los datos del objeto:
+  var id_thumb = ev.dataTransfer.getData('text');
   ev.target.appendChild(document.getElementById(id_thumb));
 }
